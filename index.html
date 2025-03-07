@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <h2>Online Portfolio</h2>
+      <!--<div class="menu-toggle">&#9776;</div>--> <!-- Burger Icon -->
+        <ul class="navmenu">
+          <li><a href="#hobbies"></a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#blog">My Reflection</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
+      </ul>
+  </div>
+    <div class="main-head">
+      <div class="head">
+        <h5>Welcome to my Portfolio</h5>
+        <h2>Jefferson Miagao</h2>
+        <p>"Hi! I'm a Jefferson Miagao student passionate about slacking off. This portfolio showcases my Hobbies and skills. Take a look around!"</p>
+      </div>
+      <img class="rounded-image" src="./images/profile2.png" alt="Novel Library">
+    </div>
+
+    <!-- hobbies -->
+    <section class="hobbies">
+      <div class="cat-header">
+        <h2>My Hobbies</h2>
+        <p>A glimpse into my favorite pastimes from books to music, and everything in between!</p>
+      </div>
+
+      <div class="cat-row">
+        <div class="cat-book">
+          <div class="books">
+            <img src="./images/chillread.png" alt="reading">
+            <h4>Reading</h4>
+            <!--<h5 class="caption-title">Reading</h5>-->
+            <p>I enjoy reading Japanese manga because of its engaging stories and unique artwork. It’s a fun way to explore different genres and learn about Japanese culture.</p>
+          </div>
+        </div>
+
+        <div class="cat-book">
+          <div class="books">
+            <img src="./images/sponge.png" alt="music">
+            <h4>Listening to Music</h4>
+            <!--<h5 class="caption-title">Listening to Music</h5>-->
+            <p>I enjoy listening to music as a hobby because it helps me relax and stay focused. Different genres set the mood, making every moment more enjoyable.</p>
+          </div>
+        </div>
+
+        <div class="cat-book">
+          <div class="books">
+            <img src="./images/videogame.png" alt="Horror">
+            <h4>Playing video games</h4>
+            <!--<h5 class="caption-title">Playing video games</h5>-->
+            <p>I enjoy playing video games as a hobby because they offer both entertainment and challenge. Whether it's exploring open worlds, solving puzzles, or competing online, gaming provides an immersive escape. It also helps improve problem-solving skills, reflexes, and teamwork while being a fun way to unwind.</p>
+          </div>
+        </div>
+
+        <div class="cat-book">
+          <div class="books">
+            <img src="./images/gome.png" alt="Pure Cinema">
+            <h4>Pure Cinema</h4>
+            <!--<h5 class="caption-title">Pure Cinema</h5>-->
+            <p>Sorry, Amanai. I'm not even angry at you right now. It's just that the world feels so, so wonderful right now.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--section edit-->
+
+    <section id="about-me">
+      <h2 class="Blog-header"></h2>
+      <div class="set-row">
+          <div class="col">
+              <img src="./images/about.png" alt="About Me">
+              <h4>About Me</h4>
+              <p>I'm a pretty chill person, usually going with the flow and not letting much get to me. Sometimes I come off as a bit stoic, just taking things as they come without overreacting. When I’ve got time to kill, I like to dive into comics, getting lost in different worlds and stories. Music is another go-to for me—whether it's just background noise or something to vibe to, it always helps pass the time.</p>
+          </div>
+      </div>
+  </section>
+        <!--blog-->
+        <section id="blog">
+            <h2 class="Blog-header"></h2>
+            <div class="set-row">
+                <div class="col">
+                <img src="./images/reflection.png" alt="">
+                <h4>Personal Reflection</h4>
+                <p>As a student, reading has been a great way to expand my knowledge and spark creativity. Whether it’s diving into fiction, exploring history, or enjoying manga, books offer new perspectives and an escape from stress. Along with gaming and music, reading helps me relax, stay focused, and learn beyond the classroom.</p>
+            </div>
+          </div>
+    </section>
+ 
+    <section id="contact-me">
+      <h2 class="contact-header">Contact Me</h2>
+      <div class="contact-container">
+          <div class="contact-text">
+              <h3>Let's Connect</h3>
+              <p>If you have any questions or just want to chat, feel free to reach out!</p>
+          </div>
+          <div class="contact-form">
+              <form>
+                  <input type="text" placeholder="Your Name" required>
+                  <input type="email" placeholder="Your Email" required>
+                  <textarea placeholder="Your Message" required></textarea>
+                  <button type="submit">Send</button>
+              </form>
+          </div>
+      </div>
+  </section>
+  
+  <footer id="footer">
+    <div class="footer-container">
+        <p>© 2025 Von Haven. All Rights Reserved.</p>
+        <p>📞 Contact: +090 000 7890 | 📧 Email: ryouzaki1928@gmail.com</p>
+        <div class="social-links">
+            <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+<button id="backToTop" onclick="scrollToTop()">↑ Top</button>
+<script>
+  window.onscroll = function () {
+      let button = document.getElementById("backToTop");
+      if (document.documentElement.scrollTop > 100) {
+          button.classList.add("show");
+      } else {
+          button.classList.remove("show");
+      }
+  };
+
+  function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
